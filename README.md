@@ -128,11 +128,11 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_6
 
 ### MRR computation:  "Algorithm 1" vs. "Optimization-based Method"
 
-For the benchmark, here we use three QNNs:  `./QNNs/mnist_1blk_64_in_4_qu_4.h5`, `./QNNs/mnist_1blk_64_in_6_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4). The three QNNs are under the same architecture (784:64:10) and with totally same quantization configurations for the weights, biases and outputs of each non-input layers, while the input configurations for the three QNNs are <+, 4, 4>,  <+, 6, 6> and <+, 8, 8>  respectively. 
+For the benchmark, here we use three QNNs:  `./QNNs/mnist_1blk_64_in_4_qu_4.h5`, `./QNNs/mnist_1blk_64_in_6_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4). The three QNNs are under the same architecture (784:64:10) and with totally same quantization configurations for the weights, biases and outputs of each non-input layer, while the input configurations for the three QNNs are <+, 4, 4>,  <+, 6, 6> and <+, 8, 8>  respectively. 
 
 <!-- Note that we do not compare the  <+, 8, 8> as input configuration because almost all the computation tasks are timeout using Optimization-based Method with this input quantization. -->
 
-The time limit for each computation task is 2 hours. We set both parameters **Step** and **StartR** in Algorithm 1 to 10 for QNN P1-4, and 5 for the other two QNNs.  The input samples used as benchmark are as follows:
+Each task is run with 2 hours timeout. We set both **Step** and **StartR** parameters in *Algorithm 1* to 10 for QNN P1-4, and 5 for the other two QNNs.  The following tables give the MRR results with computation time (in seconds) using two methods, where 'TO' denotes timeout. The input samples used as benchmark are as follows:
 
 ```
 698 712 931 1032 1303 1489 1722 1757 1811 1950 2151 2474 2715 2768 3066  
