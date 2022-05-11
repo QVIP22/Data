@@ -154,12 +154,12 @@ The experimental results on  `./QNNs/mnist_1blk_64_in_6_qu_4.h5` are:
 | **Time with Algorithm 1**   | 162.5 | 31.04 | 255.8 | 36.35 | 5,568 | 106.7 | 343.1 | 267.2 | 261.8 | 315.1    | 80.93 | 326.2 | 4.89  | 352.0 | 118.7 |
 | **Time with  Optimization** | 155.2 | 62.49 | TO    | 36.59 | TO    | 338.2 | 3,901 | TO    | TO    | TO       | 190.1 | TO    | 31.63 | TO    | 1,696    |
 
-The experimental results on  `./QNNs/mnist_1blk_64_in_8_qu_4.h5` are:
+The experimental results on  `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) are:
 
-| Samples                     | 698   | 712  | 931   | 1032 | 1303  | 1489  | 1722  | 1757  | 1181  | 1950 | 2151  | 2474  | 2715  | 2768  | 3066  |
-| :-------------------------- | ----- | ---- | ----- | ---- | ----- | ----- | ----- | ----- | ----- | -------- | ----- | ----- | ----- | ----- | ----- |
-| **MRR**                     | 5     | 2    | 3     | 0    | 4     | 10    | 2     | 7     | 6     | 5        | 5     | 2     | 4     | 10    | 2     |
-| **Time with Algorithm 1**   | 513.0 | 81.0 | 1,459 | 5.21 | 389.6 | 4,817 | 123.3 | 4,211 | 507.5 | 307.2    | 548.0 | 111.9 | 356.1 | 2,081 | 455.5 |
-| **Time with  Optimization** | TO    | 180.1   | TO    | TO   | TO    | TO    | TO    | TO    | TO    | TO       | TO    | TO    | TO    | TO    | TO    |
+| Samples                     | 698   | 712  | 931   | 1032 | 1303  | 1489  | 1722  | 1757  | 1181  | 1950  | 2151  | 2474  | 2715  | 2768  | 3066  |
+| :-------------------------- | ----- | ---- | ----- | ---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| **MRR**                     | 5     | 2    | 3     | 0    | 4     | 10    | 2     | 7     | 6     | 5     | 5     | 2     | 4     | 10    | 2     |
+| **Time with Algorithm 1**   | 513.0 | 81.0 | 1,459 | 5.21 | 389.6 | 4,817 | 123.3 | 4,211 | 507.5 | 307.2 | 548.0 | 111.9 | 356.1 | 2,081 | 455.5 |
+| **Time with  Optimization** | TO-   | 180.1| TO-   | 65.0 | TO    | TO    | 507.4 | TO    | TO    | TO    | TO    | 144.4 | TO    | TO-   | TO-   |
 
-We observe that the optimization-based method is only applicable to QNNs with  lower quantization bit sizes/small-scales.
+<!-- We observe that the optimization-based method is only applicable to QNNs with lower quantization bit sizes/small-scales. -->
