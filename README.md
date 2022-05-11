@@ -160,6 +160,6 @@ The experimental results on  `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) are:
 | :-------------------------- | ----- | ---- | ----- | ---- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | **MRR**                     | 5     | 2    | 3     | 0    | 4     | 10    | 2     | 7     | 6     | 5     | 5     | 2     | 4     | 10    | 2     |
 | **Time with Algorithm 1**   | 513.0 | 81.0 | 1,459 | 5.21 | 389.6 | 4,817 | 123.3 | 4,211 | 507.5 | 307.2 | 548.0 | 111.9 | 356.1 | 2,081 | 455.5 |
-| **Time with  Optimization** | TO-   | 180.1| TO-   | 65.0 | TO    | TO    | 507.4 | TO    | TO    | TO    | TO    | 144.4 | TO    | TO-   | TO-   |
+| **Time with  Optimization** | TO    | 180.1| TO    | 65.0 | TO    | TO    | 507.4 | TO    | TO    | TO    | TO    | 144.4 | TO    | TO    | TO    |
 
 <!-- We observe that the optimization-based method is only applicable to QNNs with lower quantization bit sizes/small-scales. -->
