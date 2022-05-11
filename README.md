@@ -124,7 +124,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_6
 
 #### Distribution of (non-)robust samples under various attack radii *r* and quantization bits *Q* for P1-*y* and P3-*y* (*y*=4, 6, 8, 10)
 
-<img src="./Figures/P1_Dis.png" width = "450" height = "350" alt="图片名称" align=center /> <img src="./Figures/P3_Dis.png" width = "450" height = "350" align=center />                                                                                       
+<img src="./Figures/P1_Dis.png" width = "450" height = "350" alt="图片名称" align=center /> &#8194; &#8194; &#8194; &#8194; <img src="./Figures/P3_Dis.png" width = "450" height = "350" align=center />                                                                                       
 
 ### MRR computation:  "Algorithm 1" vs. "Optimization-based Method"
 
