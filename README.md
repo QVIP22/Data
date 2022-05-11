@@ -44,7 +44,7 @@ The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (sh
 
 -->
 
-## Robustness Verification Results for Section 5.2 (compared with the [SMT-based verifier](https://github.com/mlech26l/qnn_robustness_benchmarks))
+## Robustness Verification Results in Section 5.2 (compared with the [SMT-based verifier](https://github.com/mlech26l/qnn_robustness_benchmarks))
 
 QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`(P4-6)
 
