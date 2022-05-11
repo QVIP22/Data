@@ -6,12 +6,12 @@ This is the official webpage for paper *QVIP: An ILP-based Formal Verification A
 - We implement our approach as an end-to-end tool QVIP, using the ILP-solver Gurobi for QNN robustness verification and maximum robustness radius computation.
 - We conduct an extensive evaluation of QVIP, demonstrating the efficiency and effectiveness of QVIP, e.g., significantly outperforming the state-of-the-art methods.
 
-Note that, all the QNN files used in the paper (Table 1) are given in the folder `./QNNs` , where `./QNNs/dataset_arch_in_8_qu_y.h5` denote the QNN trained under architecture $arch with Q=y. For example P3-8 is `./QNNs/mnist_2blk_64_32_in_8_qu_8.h5` and P4-6 is  `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`
+Note that, all the QNN files used in the Table 1 from paper are given in the folder `./QNNs` , where `./QNNs/dataset_arch_in_8_qu_y.h5` denote the QNN trained using $dataset under architecture $arch with Q=y. For example P3-8 is `./QNNs/mnist_2blk_64_32_in_8_qu_8.h5` and P4-6 is  `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`
 
 ## Benchmarks in Sections 5.1 & 5.3:
-QNNs in Section 5.1: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`
+QNNs in Section 5.1: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
-QNNs in Section 5.3: `./QNNs/mnist_1blk_64_in_8_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
+QNNs in Section 5.3: `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) and `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
 The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (shown by IDs):
 
@@ -46,9 +46,9 @@ The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (sh
 
 ## Robustness Verification Results for Section 5.2 (compared with the [SMT-based verifier](https://github.com/mlech26l/qnn_robustness_benchmarks))
 
-QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`
+QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`(P4-6)
 
-#### Verification Results of MNIST samples 0-99 with attack radius 1
+#### Verification Results of MNIST samples 0-99 with attack radius 1 for QNN P1-6
 
 | Type                            | Samples   |
 | :------------------------------ | --------- |
@@ -57,7 +57,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (0) | --        |
 | Robust under attack r=1 (99)    | Remaining |
 
-#### Verification Results of MNIST samples 100-199 with attack radius 2
+#### Verification Results of MNIST samples 100-199 with attack radius 2 for QNN P1-6
 
 | Type                            | Samples           |
 | :------------------------------ | ----------------- |
@@ -66,7 +66,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (4) | `104 151 158 115` |
 | Robust under attack r=1 (95)    | Remaining         |
 
-### Verification Results of MNIST samples 200-299 with attack radius 3
+#### Verification Results of MNIST samples 200-299 with attack radius 3 for QNN P1-6
 
 | Type                            | Samples               |
 | :------------------------------ | --------------------- |
@@ -75,7 +75,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (5) | `233 266 282 290 257` |
 | Robust under attack r=1 (91)    | Remaining             |
 
-### Verification Results of MNIST samples 300-399 with attack radius 4
+#### Verification Results of MNIST samples 300-399 with attack radius 4 for QNN P1-6
 
 | Attempt                         | Samples                           |
 | :------------------------------ | --------------------------------- |
@@ -84,7 +84,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (8) | `303 352 376 324 359 300 386 320` |
 | Robust under attack r=1 (89)    | Remaining                         |
 
-### Verification Results of Fashion-MNIST samples 0-99 on P4-6 with attack radius 1
+#### Verification Results of Fashion-MNIST samples 0-99 with attack radius 1 for QNN P4-6
 
 | Attempt                         | Samples                                  |
 | :------------------------------ | ---------------------------------------- |
@@ -93,7 +93,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (4) | `4 28 42 73`                             |
 | Robust under attack r=1 (83)    | Remaining                                |
 
-### Verification Results of Fashion-MNIST samples 100-199 on P4-6 with attack radius 2
+#### Verification Results of Fashion-MNIST samples 100-199 with attack radius 2 for QNN P4-6
 
 | Attempt                         | Samples                                    |
 | :------------------------------ | ------------------------------------------ |
@@ -102,7 +102,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (5) | `136 151 135 117 166`                      |
 | Robust under attack r=1 (85)    | Remaining                                  |
 
-### Verification Results of Fashion-MNIST samples 200-249 on P4-6 with attack radius 3
+#### Verification Results of Fashion-MNIST samples 200-249 with attack radius 3 for QNN P4-6
 
 | Attempt                         | Sample ID                     |
 | :------------------------------ | ----------------------------- |
@@ -111,7 +111,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 | Non-Robust under attack r=1 (3) | `248 227 219`                 |
 | Robust under attack r=1 (40)    | Remaining                     |
 
-### Verification Results of Fashion-MNIST samples 300-349 on P4-6 with attack radius 4
+#### Verification Results of Fashion-MNIST samples 300-349 with attack radius 4 for QNN P4-6
 
 | Attempt                         | Samples                   |
 | :------------------------------ | ------------------------- |
@@ -122,17 +122,17 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5` and `./QNNs/fashion-mnist_1blk_64_in_8
 
 ## <span style="color: blue;">Additional Experimental Results</span>
 
-### Distribution of (non-)robust samples under various attack radii *r* and quantization bits *Q* for P1-*y* and P3-*y*
+#### Distribution of (non-)robust samples under various attack radii *r* and quantization bits *Q* for P1-*y* and P3-*y* (*y*=4, 6, 8, 10)
 
-<img src="./Figures/P1_Dis.png" width = "500" height = "400" alt="图片名称" align=center /> <img src="./Figures/P3_Dis.png" width = "500" height = "400" alt="图片名称" align=center />                                                                                       
+<img src="./Figures/P1_Dis.png" width = "450" height = "350" alt="图片名称" align=center /> <img src="./Figures/P3_Dis.png" width = "450" height = "350" align=center />                                                                                       
 
 ### MRR computation:  "Algorithm 1" vs. "Optimization-based Method"
 
-For the benchmark, here we use  three QNN:  `./QNNs/mnist_1blk_64_in_4_qu_4.h5`, `./QNNs/mnist_1blk_64_in_6_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_4.h5`. The three QNNs are under same architecture  (784:64:10) and all the quantization configurations except for the input quantization configuration. Here the input configurations for the three QNNs are <+, 4, 4>,  <+, 6, 6> and <+, 8, 8>  respectively. 
+For the benchmark, here we use three QNNs:  `./QNNs/mnist_1blk_64_in_4_qu_4.h5`, `./QNNs/mnist_1blk_64_in_6_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4). The three QNNs are under the same architecture (784:64:10) and with totally same quantization configurations for the weights, biases and outputs of each non-input layers, while the input configurations for the three QNNs are <+, 4, 4>,  <+, 6, 6> and <+, 8, 8>  respectively. 
 
 <!-- Note that we do not compare the  <+, 8, 8> as input configuration because almost all the computation tasks are timeout using Optimization-based Method with this input quantization. -->
 
-The time limit for each computation task is 2 hour. We set both parameters **Step** and **StartR** in Algorithm 1 to 5.  The input samples used as benchmark are as follows:
+The time limit for each computation task is 2 hours. We set both parameters **Step** and **StartR** in Algorithm 1 to 10 for QNN P1-4, and 5 for the other two QNNs.  The input samples used as benchmark are as follows:
 
 ```
 698 712 931 1032 1303 1489 1722 1757 1811 1950 2151 2474 2715 2768 3066  
