@@ -23,17 +23,17 @@ The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (sh
 
 QNNs in Section 5.1: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
-Experimental results (raw datum) of Figure 5 in Section 5.1 are given in the file `./Experimental Results/sec_5_1_Figure_5.csv`, where 'NA' means QVIP calls a timeout of 2 hours exceeded.
+Experimental results (raw datum) of Figure 5 in Section 5.1 are given in the file `./Experimental Results/sec_5_1_Figure_5.csv`, where 'NA' means that QVIP calls a timeout of 2 hours exceeded.
 
 QNNs in Section 5.3: `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) and `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
-Experimental results (raw datum) of Figure 7 in Section 5.3 are given in the file `./Experimental Results/sec_5_3_Figure_7.csv`, where 'NA' means QVIP calls a timeout of 2 hours exceeded.
+Experimental results (raw datum) of Figure 7 in Section 5.3 are given in the file `./Experimental Results/sec_5_3_Figure_7.csv`, where 'NA' means that QVIP calls a timeout of 2 hours exceeded.
 
 ## Robustness Verification Results in Section 5.2 (compared with the [SMT-based verifier](https://github.com/mlech26l/qnn_robustness_benchmarks))
 
 QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`(P4-6)
 
-Experimental results (raw datum) of Table 2 (resp. Table 3) in Section 5.2 are given in the file `./Experimental Results/sec_5_2_Table_2.csv` (resp. `./Experimental Results/sec_5_2_Table_3.csv`), where 'NA' means QVIP calls a timeout of 2 hours exceeded or the input sample is misclassified by the QNN.
+Experimental results (raw datum) of Table 2 (resp. Table 3) in Section 5.2 are given in the file `./Experimental Results/sec_5_2_Table_2.csv` (resp. `./Experimental Results/sec_5_2_Table_3.csv`), where 'NA' means that QVIP calls a timeout of 2 hours exceeded or the input sample is misclassified by the QNN.
 
 #### Verification Results of MNIST samples 0-99 with attack radius 1 for QNN P1-6
 
