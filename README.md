@@ -8,10 +8,8 @@ This is the official webpage for paper *QVIP: An ILP-based Formal Verification A
 
 Note that, all the QNN files used in the Table 1 from paper are given in the folder `./QNNs` , where `./QNNs/dataset_arch_in_8_qu_y.h5` denote the QNN trained using $dataset under architecture $arch with Q=y. For example P3-8 is `./QNNs/mnist_2blk_64_32_in_8_qu_8.h5` and P4-6 is  `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`
 
-## Benchmarks in Sections 5.1 & 5.3:
-QNNs in Section 5.1: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
-QNNs in Section 5.3: `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) and `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
+## Benchmarks in Sections 5.1 & 5.3:
 
 The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (shown by IDs):
 
@@ -23,30 +21,19 @@ The 100 correctly predicted samples from MNIST dataset by both P1-4 and P1-6 (sh
 8010 8481 8848 8105 8709 8454 8922 8701 8000 8587 9800 9211 9294 9459 9921 9099 9893 9927 9830 9465
 ```
 
-<!-- ### MRR results for the 100 samples:
+QNNs in Section 5.1: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
 
-| Samples | 521  | 342  | 698  | 106  | 315  | 76   | 712  | 931  | 513  | 252  | 1813 | 1811 | 1303 | 1032 | 1489 | 1722 | 1112 | 1757 | 1194 | 1950 |
-| :------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| P1-4    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| P1-6    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| Samples | 2714 | 2823 | 2247 | 2612 | 2474 | 2715 | 2492 | 2151 | 2768 | 2448 | 3655 | 3793 | 3266 | 3083 | 3356 | 3066 | 3414 | 3422 | 3600 | 3914 |
-| P1-4    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| P1-6    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| Samples | 4068 | 4433 | 4023 | 4847 | 4471 | 4989 | 4265 | 4700 | 4440 | 4372 | 5993 | 5336 | 5653 | 5554 | 5229 | 5569 | 5307 | 5173 | 5496 | 5290 |
-| P1-4    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| P1-6    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| Samples | 6656 | 6037 | 6385 | 6876 | 6760 | 6325 | 6634 | 6408 | 6722 | 6573 | 7496 | 7018 | 7892 | 7364 | 7410 | 7609 | 7458 | 7236 | 7847 | 7714 |
-| P1-4    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| P1-6    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| Samples | 8010 | 8481 | 8848 | 8105 | 8709 | 8454 | 8922 | 8701 | 8000 | 8587 | 9800 | 9211 | 9294 | 9459 | 9921 | 9099 | 9893 | 9927 | 9830 | 9465 |
-| P1-4    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-| P1-6    |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+Experimental results (raw datum) of Figure 5 in Section 5.1 are given in the file `./Experimental Results/sec_5_1_Figure_5.csv`, where 'NA' means QVIP called a timeout of 2 hours exceeded.
 
--->
+QNNs in Section 5.3: `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4) and `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6)
+
+Experimental results (raw datum) of Figure 7 in Section 5.3 are given in the file `./Experimental Results/sec_5_3_Figure_7.csv`, where 'NA' means QVIP called a timeout of 2 hours exceeded.
 
 ## Robustness Verification Results in Section 5.2 (compared with the [SMT-based verifier](https://github.com/mlech26l/qnn_robustness_benchmarks))
 
 QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_64_in_8_qu_6.h5`(P4-6)
+
+Experimental results (raw datum) of Table 2 (resp. Table 3) in Section 5.2 are given in the file `./Experimental Results/sec_5_2_Table_2.csv` (resp. `./Experimental Results/sec_5_2_Table_3.csv`), where 'NA' means QVIP called a timeout of 2 hours exceeded.
 
 #### Verification Results of MNIST samples 0-99 with attack radius 1 for QNN P1-6
 
@@ -125,8 +112,7 @@ QNNs: `./QNNs/mnist_1blk_64_in_8_qu_6.h5`(P1-6) and `./QNNs/fashion-mnist_1blk_6
 #### Distribution of (non-)robust samples under various attack radii *r* and quantization bits *Q* for P1-*y* and P3-*y* (*y*=4, 6, 8, 10)
 
 <img src="./Figures/P1_Dis.png" width = "450" height = "350" alt="图片名称" align=center /> &#8194; &#8194; &#8194; &#8194; <img src="./Figures/P3_Dis.png" width = "450" height = "350" align=center />                                                                                       
-
-### MRR computation:  "Algorithm 1" vs. "Optimization-based Method"
+#### MRR computation:  "Algorithm 1" vs. "Optimization-based Method"
 
 For the benchmark, here we use three QNNs:  `./QNNs/mnist_1blk_64_in_4_qu_4.h5`, `./QNNs/mnist_1blk_64_in_6_qu_4.h5` and `./QNNs/mnist_1blk_64_in_8_qu_4.h5`(P1-4). The three QNNs are under the same architecture (784:64:10) and with totally same quantization configurations for the weights, biases and outputs of each non-input layer, while the input configurations for the three QNNs are <+, 4, 4>,  <+, 6, 6> and <+, 8, 8>  respectively. 
 
